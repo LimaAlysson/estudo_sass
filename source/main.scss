@@ -1,25 +1,8 @@
-$primarycolor: #eee;
-$textcolor: #111;
+@use 'config/reset';
+@use 'config/cores';
+@use 'secoes/produtos';
+
 
 body {
-    background-color: $primarycolor;
-}
-
-header {
-    background-color: $primarycolor;
-
-    h1 {
-        color: $textcolor;
-    }
-}
-
-button {
-    padding: 16px;
-    background-color: $textcolor;
-    color: $primarycolor;
-
-    &:hover {
-        background-color: $primarycolor;
-        color: $textcolor;
-    }
+    background-color: cores.$corDeFundo;
 }
